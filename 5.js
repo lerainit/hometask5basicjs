@@ -1,10 +1,10 @@
 
 let myUser = createNewUser();
 
-function createNewUser(a = null,b = null){
+function createNewUser(str1 = null,str2 = null){
 
-let firstName = a;
-let lastName = b;
+let firstName = str1;
+let lastName = str2;
 
     return {
 
