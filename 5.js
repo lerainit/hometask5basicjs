@@ -24,9 +24,9 @@ function createNewUser(name = null,surname = null){
 
          setfirstName(newName){
 		 
-                   Object.defineProperty(this, 'firstName', { writable: true,configureable:true });
+                   Object.defineProperty(this, 'firstName', { writable: true });
                    this.firstName = newName;
-                   Object.defineProperty(this, 'firstName', { writable: false,configureable:true });
+                   Object.defineProperty(this, 'firstName', { writable: false});
          },
 
          getlastName() {
@@ -38,11 +38,11 @@ function createNewUser(name = null,surname = null){
 
           setlastName(newlastName){
       
-                   Object.defineProperty(this, 'lastName', { writable:true,configureable:true });
+                   Object.defineProperty(this, 'lastName', { writable:true});
       
                    this.lastName = newlastName;
    
-                   Object.defineProperty(this, 'lastName', { writable:false,configureable:true });
+                   Object.defineProperty(this, 'lastName', { writable:false});
  
           }
 
@@ -59,9 +59,9 @@ let userSurname = prompt('Enter your surname');
 
 
 
-Object.defineProperty(myUser,'firstName',{value : userName ,writable:false,configureable:true});
+Object.defineProperty(myUser,'firstName',{value : userName ,writable:false});
 
-Object.defineProperty(myUser,'lastName',{value: userSurname ,writable:false,configureable:true});
+Object.defineProperty(myUser,'lastName',{value: userSurname ,writable:false});
 
 
 console.log(myUser);
