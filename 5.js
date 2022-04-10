@@ -3,14 +3,12 @@ let myUser = createNewUser();
 
 function createNewUser(name = null,surname = null){
 
-let firstName = name;
-let lastName = surname;
 
     return {
 
-         firstName,
+         firstName: name,
 
-         lastName,
+         lastName: surname,
 
          getLogin(){
 
