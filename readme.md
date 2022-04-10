@@ -16,16 +16,14 @@ lastName:'Smith',
 
 medicalField:'surgeon',
 
-
 sayHi(){
 return `Hello , My name is ${this.firstName} ${this.lastName}. I am ${this.medicalField}`
 
 },
 
-
 }
 
- console.log(physician.sayHi()). // Hello, my name is John Smith. I am a surgeon
+console.log(physician.sayHi()). // Hello, my name is John Smith. I am a surgeon
 
 ```
 
