@@ -1,10 +1,10 @@
 
 let myUser = createNewUser();
 
-function createNewUser(str1 = null,str2 = null){
+function createNewUser(name = null,surname = null){
 
-let firstName = str1;
-let lastName = str2;
+let firstName = name;
+let lastName = surname;
 
     return {
 
@@ -55,15 +55,15 @@ let lastName = str2;
 
 
 
-let name = prompt('Enter your name');
+let userName = prompt('Enter your name');
 
-let surname = prompt('Enter your surname');
+let userSurname = prompt('Enter your surname');
 
 
 
-Object.defineProperty(myUser,'firstName',{value : name ,writable:false,configureable:true});
+Object.defineProperty(myUser,'firstName',{value : userName ,writable:false,configureable:true});
 
-Object.defineProperty(myUser,'lastName',{value: surname ,writable:false,configureable:true});
+Object.defineProperty(myUser,'lastName',{value: userSurname ,writable:false,configureable:true});
 
 
 console.log(myUser);
