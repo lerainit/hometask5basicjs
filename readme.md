@@ -51,9 +51,7 @@ age:29,
 
 },
 
-
- }
-
+}
 
 console.log(typeof ivan.name);// string
 
