@@ -1,5 +1,4 @@
 
-
 let myUser = createNewUser();
 
 function createNewUser(a,b){
