@@ -77,7 +77,7 @@ console.log(typeof ivan.spouse);// object
 let str1 = new String("abc");
 let str2 = new String("abc");
 
-alert(strl == str2);
+alert(str1 == str2);
 
 ```
 
