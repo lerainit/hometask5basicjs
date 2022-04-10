@@ -59,9 +59,9 @@ let userSurname = prompt('Enter your surname');
 
 
 
-Object.defineProperty(myUser,'firstName',{value : userName ,writable:false});
+Object.defineProperty(myUser,'firstName',{value : userName ,writable:false,configurable:true});
 
-Object.defineProperty(myUser,'lastName',{value: userSurname ,writable:false});
+Object.defineProperty(myUser,'lastName',{value: userSurname ,writable:false,configurable:true});
 
 
 console.log(myUser);
