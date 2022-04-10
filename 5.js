@@ -65,11 +65,11 @@ Object.defineProperty(myUser,'firstName',{value : name ,writable:false,configure
 
 Object.defineProperty(myUser,'lastName',{value: surname ,writable:false,configureable:true});
 
+console.log(myUser);
 
 console.log(myUser.getLogin())
 
 
-console.log(myUser);
 
 
 myUser.firstName = 'mykola';
