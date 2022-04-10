@@ -10,20 +10,20 @@
 
 const physician = {
 
-firstName:'John',
+     firstName:'John',
 
-lastName:'Smith',
+     lastName:'Smith',
 
-medicalField:'surgeon',
+     medicalField:'surgeon',
 
-sayHi(){
-return `Hello , My name is ${this.firstName} ${this.lastName}. I am ${this.medicalField}`
+    sayHi(){
+    return `Hello , My name is ${this.firstName} ${this.lastName}. I am ${this.medicalField}`
 
-},
+    },
 
 }
 
-console.log(physician.sayHi()). // Hello, my name is John Smith. I am a surgeon
+   console.log(physician.sayHi()). // Hello, my name is John Smith. I am a surgeon
 
 ```
 
@@ -38,20 +38,20 @@ console.log(physician.sayHi()). // Hello, my name is John Smith. I am a surgeon
 
  let ivan = {
 
-name: 'Ivan',
+      name: 'Ivan',
 
-surname:'Demydenko',
+      surname:'Demydenko',
 
-age:30,
+      age:30,
 
-spouse : {
-name:'Marina',
-surname:'Matvienko',
-age:29,
+     spouse : {
+     name:'Marina',
+     surname:'Matvienko',
+     age:29,
 
-},
+     },
 
-}
+  }
 
 console.log(typeof ivan.name);// string
 
