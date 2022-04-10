@@ -18,7 +18,7 @@ medicalField:'surgeon',
 
 
 sayHi(){
-return `Hello , My name is ${this.firstname} ${this.lastName}. I am ${this.medicalField}`
+return `Hello , My name is ${this.firstName} ${this.lastName}. I am ${this.medicalField}`
 
 },
 
