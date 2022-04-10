@@ -7,48 +7,49 @@ function createNewUser(a,b){
 let firstName;
 let lastName;
 
-return  {
+    return {
 
-firstName,
+         firstName,
 
-lastName,
+         lastName,
 
-getLogin(){
+         getLogin(){
 
-   return this.firstName[0].toLowerCase() + this.lastName.toLowerCase();
+                 return this.firstName[0].toLowerCase() + this.lastName.toLowerCase();
    
-},
+         },
 
 
-getfirstName(){
+         getfirstName(){
 
-	return this.firstName
-},
+	           return this.firstName
+         },
 
-setfirstName(newName){
-      Object.defineProperty(this, 'firstName', { writable: true });
-      this.firstName = newName;
-      Object.defineProperty(this, 'firstName', { writable: false});
-   },
+         setfirstName(newName){
+		 
+                   Object.defineProperty(this, 'firstName', { writable: true });
+                   this.firstName = newName;
+                   Object.defineProperty(this, 'firstName', { writable: false});
+         },
 
-   getlastName() {
+         getlastName() {
 
-return this.lastName;
+                   return this.lastName;
 
-}, 
+         }, 
 
 
-setlastName(newlastName){
+          setlastName(newlastName){
       
-Object.defineProperty(this, 'lastName', { writable:true });
+                   Object.defineProperty(this, 'lastName', { writable:true });
       
-   this.lastName = newlastName;
+                   this.lastName = newlastName;
    
-   Object.defineProperty(this, 'lastName', { writable:false });
+                   Object.defineProperty(this, 'lastName', { writable:false });
  
-}
+          }
 
-}
+     }
 
 }
 
@@ -65,17 +66,15 @@ Object.defineProperty(myUser,'firstName',{value : name ,writable:false,configure
 
 Object.defineProperty(myUser,'lastName',{value: surname ,writable:false,configureable:true});
 
+
 console.log(myUser);
 
 console.log(myUser.getLogin())
 
 
-
-
 myUser.firstName = 'mykola';
 
 myUser.lastName = 'petrenko';
-
 
 console.log(myUser);
 
@@ -83,7 +82,6 @@ console.log(myUser);
 myUser.setfirstName('ivan'); 
 
 myUser.setlastName('onufrienko');
-
 
 console.log(myUser);
 
