@@ -24,9 +24,9 @@ function createNewUser(name = null,surname = null){
 
          setfirstName(newName){
 		 
-                   Object.defineProperty(this, 'firstName', { writable: true });
+                   Object.defineProperty(this, 'firstName', { writable: true,configureable:true });
                    this.firstName = newName;
-                   Object.defineProperty(this, 'firstName', { writable: false});
+                   Object.defineProperty(this, 'firstName', { writable: false,configureable:true });
          },
 
          getlastName() {
@@ -38,11 +38,11 @@ function createNewUser(name = null,surname = null){
 
           setlastName(newlastName){
       
-                   Object.defineProperty(this, 'lastName', { writable:true });
+                   Object.defineProperty(this, 'lastName', { writable:true,configureable:true });
       
                    this.lastName = newlastName;
    
-                   Object.defineProperty(this, 'lastName', { writable:false });
+                   Object.defineProperty(this, 'lastName', { writable:false,configureable:true });
  
           }
 
